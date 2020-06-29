@@ -1,0 +1,78 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "JMeter自动管理";
+}
+<script>
+    function click2(params) {
+        $.ajax({
+            url: 'index?handler=test',
+            type: 'POST',
+            data: JSON.stringify("hello"),
+            contentType : 'application/json',
+            dataType: 'json',
+            success: (data) => {
+                console.log(data)
+            },
+        })
+    }
+
+    function buildCsv(name) {
+        $.ajax({
+            url: 'index?handler=csv',
+            type: 'GET',
+            data: {"filename": name},
+            contentType: 'application/json',
+            success: (data) => {
+                console.log(data)
+                location.reload();
+            }
+        })
+    }
+
+    function buildHtml(name) {
+        $.ajax({
+            url: 'index?handler=html',
+            type: 'GET',
+            data: {"filename": name},
+            contentType: 'application/json',
+            success: (data) => {
+                console.log(data)
+                location.reload();
+            }
+        })
+    }
+</script>
+<div class="text-center">
+    <h1 class="display-4">JMeter自动管理</h1>
+    <form class="form-inline" role="form" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="FileUpload.UploadPublicSchedule" class="control-label"></label>
+            <input asp-for="FileUpload.UploadPublicSchedule" type="file" class="form-control" style="height:auto" />
+            <span asp-validation-for="FileUpload.UploadPublicSchedule" class="text-danger"></span>
+        </div>
+        <input type="submit" value="提交JMX文件" class="btn btn-warning" />
+    </form>
+    <table class="table">
+    <thead>
+        <tr>
+        <th>jmx文件名</th>
+        <th>CSV</th>
+        <th>HTML</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach(var file in Model.FileResult)
+            {
+                <tr>
+                <td>@file.FileName</td>
+                <td><button disabled="@file.haveCsv" type="button" class="btn btn-primary" onclick="buildCsv('@file.FileName')">生成CSV</button></td>
+                <td><button disabled="@(!(!file.haveHtml && file.haveCsv))" type="button" class="btn btn-primary" onclick="buildHtml('@file.FileName')">生成Html</button></td>
+                <td><button disabled="@(!file.haveHtml)" type="button" class="btn btn-primary" onclick="window.open('/html/@file.FileName/index.html')">查看Html</button></td>
+                </tr>
+            }
+        }
+    </tbody>
+    </table>
+</div>

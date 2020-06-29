@@ -1,0 +1,6 @@
+docker run -i -d -v /j/jmx:/j/jmx -v /j/csv:/j/csv -v /j/html:/j/html -v /etc/localtime:/etc/localtime --name jclient jclient
+
+运行之后修改文件夹权限
+
+chmod 766 /j/jmx
+chmod 766 /j/csv

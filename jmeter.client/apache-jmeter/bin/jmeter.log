@@ -1,0 +1,37 @@
+2019-07-29 09:24:24,879 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2019-07-29 09:24:24,892 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2019-07-29 09:24:24,893 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2019-07-29 09:24:24,898 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2019-07-29 09:24:24,898 INFO o.a.j.JMeter: Version 5.1.1 r1855137
+2019-07-29 09:24:24,898 INFO o.a.j.JMeter: java.version=1.8.0_211
+2019-07-29 09:24:24,898 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2019-07-29 09:24:24,898 INFO o.a.j.JMeter: os.name=Linux
+2019-07-29 09:24:24,898 INFO o.a.j.JMeter: os.arch=amd64
+2019-07-29 09:24:24,898 INFO o.a.j.JMeter: os.version=4.14.133-1-MANJARO
+2019-07-29 09:24:24,898 INFO o.a.j.JMeter: file.encoding=UTF-8
+2019-07-29 09:24:24,898 INFO o.a.j.JMeter: java.awt.headless=null
+2019-07-29 09:24:24,898 INFO o.a.j.JMeter: Max memory     =1073741824
+2019-07-29 09:24:24,898 INFO o.a.j.JMeter: Available Processors =6
+2019-07-29 09:24:24,903 INFO o.a.j.JMeter: Default Locale=English (EN)
+2019-07-29 09:24:24,903 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2019-07-29 09:24:24,903 INFO o.a.j.JMeter: JMeterHome=/home/yasewang/apache-jmeter
+2019-07-29 09:24:24,903 INFO o.a.j.JMeter: user.dir  =/home/yasewang/work/xb/jmeterClient/apache-jmeter/bin
+2019-07-29 09:24:24,904 INFO o.a.j.JMeter: PWD       =/home/yasewang/work/xb/jmeterClient/apache-jmeter/bin
+2019-07-29 09:24:24,904 INFO o.a.j.JMeter: IP: 127.0.1.1 Name: yasewang FullName: yasewang
+2019-07-29 09:24:25,706 INFO o.a.j.g.a.LookAndFeelCommand: Installing Darcula LAF
+2019-07-29 09:24:25,833 INFO o.a.j.g.a.LookAndFeelCommand: Using look and feel: com.bulenkov.darcula.DarculaLaf [Darcula]
+2019-07-29 09:24:25,833 INFO o.a.j.JMeter: Setting LAF to: com.bulenkov.darcula.DarculaLaf
+2019-07-29 09:24:25,896 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2019-07-29 09:24:30,788 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-07-29 09:24:30,789 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-07-29 09:24:30,789 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-07-29 09:24:30,789 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-07-29 09:24:30,789 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-07-29 09:24:30,789 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-07-29 09:24:30,993 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
+2019-07-29 09:24:30,993 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /home/yasewang/apache-jmeter/bin/proxyserver.jks
+2019-07-29 09:24:31,060 INFO o.a.j.s.FileServer: Default base='/home/yasewang/work/xb/jmeterClient/apache-jmeter/bin'
+2019-07-29 09:24:31,241 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2019-07-29 09:24:31,241 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2019-07-29 09:24:31,241 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2019-07-29 09:24:31,242 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000

@@ -1,0 +1,1 @@
+docker run -d -p 19998:80 -v /j:/j -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker -v /etc/localtime:/etc/localtime -e LANG="C.UTF-8" --name jsite yasewang/jsite:01
